@@ -8,11 +8,11 @@
 #---------------------------------------------------------------------
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "waferprediction"
-  EB_APPLICATION_NAME       : "Waferpredictionapp"
-  EB_ENVIRONMENT_NAME       : "Waferpredictionapp-env"
-  DEPLOY_PACKAGE_NAME       : "flask-app-${{ github.sha }}.zip"
-  AWS_REGION_NAME           : "us-east-1"
+    EB_PACKAGE_S3_BUCKET_NAME: "waferpredictionapp"
+    EB_APPLICATION_NAME: "Waferpredictionapp"
+    EB_ENVIRONMENT_NAME: "Waferpredictionapp-env-1"
+    DEPLOY_PACKAGE_NAME: "flask-app-${{ github.sha }}.zip"
+    AWS_REGION_NAME: "us-east-1"
 
 on:
   push:
