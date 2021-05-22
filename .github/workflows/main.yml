@@ -8,9 +8,9 @@
 #---------------------------------------------------------------------
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
-    EB_PACKAGE_S3_BUCKET_NAME: "practiceapp1"
-    EB_APPLICATION_NAME: "Practiceapp1"
-    EB_ENVIRONMENT_NAME: "Practiceapp1-env"
+    EB_PACKAGE_S3_BUCKET_NAME: "waferfaultprediction"
+    EB_APPLICATION_NAME: "Waferfaultprediction"
+    EB_ENVIRONMENT_NAME: "Waferfaultprediction-env"
     DEPLOY_PACKAGE_NAME: "flask-app-${{ github.sha }}.zip"
     AWS_REGION_NAME: "us-east-1"
 
